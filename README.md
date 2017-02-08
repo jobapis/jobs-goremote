@@ -1,4 +1,4 @@
-# GoRemote RSS Feed Client
+# [![JobApis.com](https://i.imgur.com/Q2LZOTB.png)](https://www.jobapis.com) GoRemote RSS Feed Client
 
 [![Latest Version](https://img.shields.io/github/release/jobapis/jobs-goremote.svg?style=flat-square)](https://github.com/jobapis/jobs-goremote/releases)
 [![Software License](https://img.shields.io/badge/license-APACHE%202.0-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -12,8 +12,6 @@
 This package helps developers connect with the [GoRemote.io](https://goremote.io/) RSS feed.
 
 Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible through open source software.
-
-[![JobApis.com](https://i.imgur.com/Q2LZOTB.png)](https://www.jobapis.com)
 
 ## Installation
 
