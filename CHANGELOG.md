@@ -1,7 +1,7 @@
 # Changelog
-All Notable changes to `jobs-careersingov` will be documented in this file
+All Notable changes to `jobs-goremote` will be documented in this file
 
-## 0.1.0 - 2017-01-27
+## 0.1.0 - 2017-02-08
 
 ### Added
 - Initial Release
