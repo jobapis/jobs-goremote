@@ -2,17 +2,17 @@
 
 use JobApis\Jobs\Client\Collection;
 use JobApis\Jobs\Client\Job;
-use JobApis\Jobs\Client\Providers\CareersInGovProvider;
-use JobApis\Jobs\Client\Queries\GoRemoteQuery;
+use JobApis\Jobs\Client\Providers\GoRemoteProvider as Provider;
+use JobApis\Jobs\Client\Queries\GoRemoteQuery as Query;
 use Mockery as m;
 
 class GoRemoteProviderTest extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->query = m::mock(GoRemoteQuery::class);
+        $this->query = m::mock(Query::class);
 
-        $this->client = new CareersInGovProvider($this->query);
+        $this->client = new Provider($this->query);
     }
 
     public function testItCanGetDefaultResponseFields()
@@ -56,9 +56,9 @@ class GoRemoteProviderTest extends \PHPUnit_Framework_TestCase
     {
         $guzzle = m::mock('GuzzleHttp\Client');
 
-        $query = new CareersInGovQuery;
+        $query = new Query;
 
-        $client = new CareersInGovProvider($query);
+        $client = new Provider($query);
 
         $client->setClient($guzzle);
 
@@ -89,7 +89,7 @@ class GoRemoteProviderTest extends \PHPUnit_Framework_TestCase
             $this->markTestSkipped('REAL_CALL not set. Real API call will not be made.');
         }
 
-        $client = new CareersInGovProvider(new CareersInGovQuery);
+        $client = new Provider(new Query);
 
         $results = $client->getJobs();
 

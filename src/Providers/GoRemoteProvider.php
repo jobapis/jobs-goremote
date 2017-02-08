@@ -3,7 +3,7 @@
 use JobApis\Jobs\Client\Exceptions\MissingParameterException;
 use JobApis\Jobs\Client\Job;
 
-class CareersInGovProvider extends AbstractProvider
+class GoRemoteProvider extends AbstractProvider
 {
     /**
      * Returns the standardized job object
@@ -50,32 +50,6 @@ class CareersInGovProvider extends AbstractProvider
     public function getFormat()
     {
         return 'xml';
-    }
-
-    /**
-     * Makes the api call and returns a collection of job objects
-     * NOTE: This method overwrites the AbstractProvider in order to trim whitespace from the body
-     *
-     * @return  \JobApis\Jobs\Client\Collection
-     * @throws MissingParameterException
-     */
-    public function getJobs()
-    {
-        // Verify that all required query vars are set
-        if ($this->query->isValid()) {
-            // Get the response from the client using the query
-            $response = $this->getClientResponse();
-            // Get the response body as a string
-            $body = trim((string) $response->getBody());
-            // Parse the string
-            $payload = $this->parseAsFormat($body, $this->getFormat());
-            // Gets listings if they're nested
-            $listings = is_array($payload) ? $this->getRawListings($payload) : [];
-            // Return a job collection
-            return $this->getJobsCollectionFromListings($listings);
-        } else {
-            throw new MissingParameterException("All Required parameters for this provider must be set");
-        }
     }
 
     /**
