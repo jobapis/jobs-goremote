@@ -7,15 +7,13 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/jobapis/jobs-goremote.svg?style=flat-square)](https://scrutinizer-ci.com/g/jobapis/jobs-goremote)
 [![Total Downloads](https://img.shields.io/packagist/dt/jobapis/jobs-goremote.svg?style=flat-square)](https://packagist.org/packages/jobapis/jobs-goremote)
 
-This package provides [GoRemote.io](https://goremote.io/) RSS feed support for [Jobs Common](https://github.com/jobapis/jobs-common).
-
 ## About
 
-Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible.
+This package helps developers connect with the [GoRemote.io](https://goremote.io/) RSS feed.
 
-![JobApis.com](https://i.imgur.com/BqHf51h.png)
+![JobApis.com](https://i.imgur.com/BqHf51h.png) Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible.
 
-[Read more about JobApis' open source projects here](https://www.jobapis.com).
+[Read more about JobApis and our open source projects here](https://www.jobapis.com).
 
 ## Installation
 
