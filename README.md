@@ -1,12 +1,12 @@
 # [![JobApis.com](https://i.imgur.com/9VOAkrZ.png)](https://www.jobapis.com) GoRemote RSS Feed Client
 
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jobapis.svg?style=social&label=Follow%20%40jobapis)](https://twitter.com/jobapis)
 [![Latest Version](https://img.shields.io/github/release/jobapis/jobs-goremote.svg?style=flat-square)](https://github.com/jobapis/jobs-goremote/releases)
 [![Software License](https://img.shields.io/badge/license-APACHE%202.0-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/jobapis/jobs-goremote/master.svg?style=flat-square&1)](https://travis-ci.org/jobapis/jobs-goremote)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/jobapis/jobs-goremote.svg?style=flat-square)](https://scrutinizer-ci.com/g/jobapis/jobs-goremote/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/jobapis/jobs-goremote.svg?style=flat-square)](https://scrutinizer-ci.com/g/jobapis/jobs-goremote)
 [![Total Downloads](https://img.shields.io/packagist/dt/jobapis/jobs-goremote.svg?style=flat-square)](https://packagist.org/packages/jobapis/jobs-goremote)
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jobapis.svg?style=social&label=Follow%20%40jobapis)](https://twitter.com/jobapis)
 
 ## About
 
