@@ -10,15 +10,28 @@
 
 ## About
 
-This api client helps PHP developers connect with the [GoRemote.io](https://goremote.io/) RSS feed.
+This package helps PHP developers connect with the [GoRemote.io](https://goremote.io/) job board's RSS feed. In just a couple lines of code, you can grab job listings from GoRemote's feed:
+
+```php
+$client = new GoRemoteProvider(new GoRemoteQuery());
+$jobs = $client->getJobs();
+```
+
+See [Usage](#usage) section below for more detailed examples.
+
+*Disclaimer: This package is not affiliated with or supported by GoRemote and we are not responsible for misuse of this software. Use at your own risk.*
 
 [JobApis](https://www.jobapis.com) makes job board and company data more accessible through open source software. To learn more, visit [JobApis.com](https://www.jobapis.com), or contact us at [admin@jobapis.com](mailto:admin@jobapis.com).
 
+## Requirements
+- [PHP 5.5+](http://www.php.net/)
+- [Composer](https://getcomposer.org/)
+
 ## Installation
 
-To install, use composer:
+To install this package, use composer:
 
-```
+```bash
 composer require jobapis/jobs-goremote
 ```
 
