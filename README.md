@@ -6,7 +6,7 @@
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/jobapis/jobs-goremote.svg?style=flat-square)](https://scrutinizer-ci.com/g/jobapis/jobs-goremote/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/jobapis/jobs-goremote.svg?style=flat-square)](https://scrutinizer-ci.com/g/jobapis/jobs-goremote)
 [![Total Downloads](https://img.shields.io/packagist/dt/jobapis/jobs-goremote.svg?style=flat-square)](https://packagist.org/packages/jobapis/jobs-goremote)
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jobapis.svg?style=social&label=Follow%20%40fold_left)](https://twitter.com/jobapis)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/jobapis.svg?style=social&label=Follow%20%40jobapis)](https://twitter.com/jobapis)
 
 ## About
 
