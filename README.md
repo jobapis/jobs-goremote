@@ -29,7 +29,7 @@ See [Usage](#usage) section below for more detailed examples.
 
 ## Installation
 
-To install this package, use composer:
+You can install this package using Composer. From the command line, run:
 
 ```bash
 composer require jobapis/jobs-goremote
