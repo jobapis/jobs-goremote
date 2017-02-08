@@ -11,9 +11,9 @@
 
 This package helps developers connect with the [GoRemote.io](https://goremote.io/) RSS feed.
 
-![JobApis.com](https://i.imgur.com/BqHf51h.png) Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible.
+Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible through open source software.
 
-[Read more about JobApis and our open source projects here](https://www.jobapis.com).
+[![JobApis.com](https://i.imgur.com/Q2LZOTB.png)](https://www.jobapis.com)
 
 ## Installation
 
