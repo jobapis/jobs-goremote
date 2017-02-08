@@ -9,7 +9,13 @@
 
 This package provides [GoRemote.io](https://goremote.io/) RSS feed support for [Jobs Common](https://github.com/jobapis/jobs-common).
 
-![](https://i.imgur.com/BCoU0OM.png)
+## About
+
+Brought to you by [JobApis.com](https://www.jobapis.com): making job board and company data more accessible.
+
+![JobApis.com](https://i.imgur.com/BqHf51h.png)
+
+[Read more about JobApis' open source projects here](https://www.jobapis.com).
 
 ## Installation
 
