@@ -19,8 +19,6 @@ $client = new GoRemoteProvider(new GoRemoteQuery());
 $jobs = $client->getJobs();
 ```
 
-The `getJobs` method above will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects. 
-
 See [Usage](#usage) section below for more detailed examples.
 
 ### Mission
@@ -44,28 +42,25 @@ $ composer require jobapis/jobs-goremote
 
 ## Usage
 
-GoRemote provides no search parameters, just a feed of all their latest jobs via RSS. In order to grab jobs, first create a query object:
+GoRemote provides no search parameters, just a feed of all their latest jobs via RSS. In order to grab jobs, first create a query object.
  
 ```php
-// Instantiate the query object
 $query = new JobApis\Jobs\Client\Queries\GoRemoteQuery();
 ```
 
 Then inject the query object into the provider.
 
 ```php
-// Instantiating a provider with a query object
-$client = new JobApis\Jobs\Client\Provider\GoRemoteProvider($query);
+$client = new JobApis\Jobs\Client\Providers\GoRemoteProvider($query);
 ```
 
 And call the "getJobs" method to retrieve results.
 
 ```php
-// Get a Collection of Jobs
 $jobs = $client->getJobs();
 ```
 
-The `getJobs` method will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects based on Schema.org's [JobPosting](https://schema.org/JobPosting) specification.
+The `getJobs()` method will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects based on Schema.org's [JobPosting](https://schema.org/JobPosting) specification.
 
 
 ## Testing and Development
