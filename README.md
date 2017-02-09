@@ -75,7 +75,7 @@ A code coverage report will be generated in the `build/` directory at the root o
 
 ## Contributing
 
-Please see [JobApis' contribution guidelines](#) for details.
+Please see [JobApis' contribution guidelines](https://www.jobapis.com/contributing/) for details.
 
 ## Legal
 
@@ -85,7 +85,7 @@ This package is not affiliated with or supported by GoRemote and we are not resp
 
 ### License
 
-This package uses the Apache 2.0 license. Please see the [License File](#) for more information.
+This package uses the Apache 2.0 license. Please see the [License File](https://www.jobapis.com/license/) for more information.
 
 ### Copyright
 
