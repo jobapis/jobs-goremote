@@ -42,7 +42,7 @@ $ composer require jobapis/jobs-goremote
 
 ## Usage
 
-GoRemote provides no search parameters, just a feed of all their latest jobs via RSS. In order to grab jobs, first create a query object.
+GoRemote provides no search parameters, just a feed of all their latest jobs via RSS. In order to get the latest job listings, first create a query object.
  
 ```php
 $query = new JobApis\Jobs\Client\Queries\GoRemoteQuery();
@@ -63,12 +63,14 @@ $jobs = $client->getJobs();
 The `getJobs()` method will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects based on Schema.org's [JobPosting](https://schema.org/JobPosting) specification.
 
 
-## Testing and Development
+## Testing
 
-1. Clone this repository from Github
+1. Clone this repository from Github.
 2. Install the dependencies with Composer: `$ composer install`.
 3. Run the test suite: `$ ./vendor/bin/phpunit`.
 4. (Optional) Run the test suite with real HTTP calls to the API: `$ REAL_CALL=1 ./vendor/bin/phpunit`.
+
+A code coverage report will be generated in the `build/` directory at the root of the project.
 
 
 ## Contributing
@@ -87,4 +89,4 @@ This package uses the Apache 2.0 license. Please see the [License File](#) for m
 
 ### Copyright
 
-Copyright 2017, [Karl Hughes](https://github.com/karllhughes)
+Copyright 2017, [Karl Hughes](https://github.com/karllhughes).
