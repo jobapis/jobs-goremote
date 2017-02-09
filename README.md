@@ -17,28 +17,30 @@ $client = new GoRemoteProvider(new GoRemoteQuery());
 $jobs = $client->getJobs();
 ```
 
+The `getJobs` method above will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects. 
+
 See [Usage](#usage) section below for more detailed examples.
 
 [JobApis](https://www.jobapis.com) makes job board and company data more accessible through open source software. To learn more, visit [JobApis.com](https://www.jobapis.com), or contact us at [admin@jobapis.com](mailto:admin@jobapis.com).
 
-*Disclaimer: This package is not affiliated with or supported by GoRemote and we are not responsible for misuse of this software. Use at your own risk.*
 
 ## Requirements
 - [PHP 5.5+](http://www.php.net/)
 - [Composer](https://getcomposer.org/)
+
 
 ## Installation
 
 You can install this package using Composer. From the command line, run:
 
 ```bash
-composer require jobapis/jobs-goremote
+$ composer require jobapis/jobs-goremote
 ```
 
-## Usage
-GoRemote provides no search parameters, just a feed of all their latest jobs via RSS.
 
-In order to grab jobs, first create a query object:
+## Usage
+
+GoRemote provides no search parameters, just a feed of all their latest jobs via RSS. In order to grab jobs, first create a query object:
  
 ```php
 // Instantiate the query object
@@ -59,25 +61,31 @@ And call the "getJobs" method to retrieve results.
 $jobs = $client->getJobs();
 ```
 
-The `getJobs` method will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects.
+The `getJobs` method will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects based on Schema.org's [JobPosting](https://schema.org/JobPosting) specification.
 
-## Testing
 
-``` bash
-$ ./vendor/bin/phpunit
-```
+## Testing and Development
+
+1. Clone this repository from Github
+2. Install the dependencies with Composer: `$ composer install`.
+3. Run the test suite: `$ ./vendor/bin/phpunit`.
+4. (Optional) Run the test suite with real HTTP calls to the API: `$ REAL_CALL=1 ./vendor/bin/phpunit`.
+
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/jobapis/jobs-goremote/blob/master/CONTRIBUTING.md) for details.
+Please see [JobApis' contribution guidelines](#) for details.
 
+## Legal
 
-## Credits
+### Disclaimer
 
-- [Karl Hughes](https://github.com/karllhughes)
-- [All Contributors](https://github.com/jobapis/jobs-goremote/contributors)
+This package is not affiliated with or supported by GoRemote and we are not responsible for any use or misuse of this software.
 
+### License
 
-## License
+This package uses the Apache 2.0 license. Please see the [License File](#) for more information.
 
-The Apache 2.0. Please see [License File](https://github.com/jobapis/jobs-goremote/blob/master/LICENSE) for more information.
+### Copyright
+
+Copyright 2017, [Karl Hughes](https://github.com/karllhughes)
