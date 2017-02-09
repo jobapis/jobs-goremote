@@ -10,7 +10,9 @@
 
 ## About
 
-This package helps PHP developers connect with the [GoRemote.io](https://goremote.io/) job board's RSS feed. In just a couple lines of code, you can grab job listings from GoRemote's feed:
+This package helps PHP developers connect with the [GoRemote.io](https://goremote.io/) job board's RSS feed. In just a couple lines of code, you can grab job listings from GoRemote's feed.
+
+### Example
 
 ```php
 $client = new GoRemoteProvider(new GoRemoteQuery());
@@ -20,6 +22,8 @@ $jobs = $client->getJobs();
 The `getJobs` method above will return a [Collection](https://github.com/jobapis/jobs-common/blob/master/src/Collection.php) of [Job](https://github.com/jobapis/jobs-common/blob/master/src/Job.php) objects. 
 
 See [Usage](#usage) section below for more detailed examples.
+
+### Mission
 
 [JobApis](https://www.jobapis.com) makes job board and company data more accessible through open source software. To learn more, visit [JobApis.com](https://www.jobapis.com), or contact us at [admin@jobapis.com](mailto:admin@jobapis.com).
 
